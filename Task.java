@@ -27,6 +27,11 @@ class Task{
 	void setDueMinute(int dueMinute){
 		this.dueMinute = dueMinute;
 	}
+	void toString(){
+		for(int i = 0; i <7; i++){
+			System.out.println((i+1)+" ");
+		}
+	}
 	void addTimeSlot(int dayOfWeek, int day, int month, int year, int startHour, int startMinute, int endHour, int endMinute){
 		//timeslots is from Scheduler class; provides array of TimeSlot objects for each day of month (31 days, max)
 		TimeSlot ts = new TimeSlot(day, month, year, startHour, startMinute, endMinute, endHour);
